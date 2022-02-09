@@ -1,0 +1,954 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>ticketbooking documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">ticketbooking documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content controller">
+                   <div class="content-data">
+
+
+
+
+
+<ol class="breadcrumb">
+  <li>Controllers</li>
+  <li >TicketController</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info">
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>src/ticketbooking/ticketbooking.controller.ts</code>
+        </p>
+
+            <p class="comment">
+                <h3>Prefix</h3>
+            </p>
+            <p class="comment">
+                <code>ticket</code>
+            </p>
+
+
+            <p class="comment">
+                <h3>Description</h3>
+            </p>
+            <p class="comment">
+                <p>TicketController</p>
+
+            </p>
+
+
+
+
+            <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#findBookingTicketById" >findBookingTicketById</a>
+                            </li>
+                            <li>
+                                <a href="#findTicketBookedByName" >findTicketBookedByName</a>
+                            </li>
+                            <li>
+                                <a href="#findUserTicketById" >findUserTicketById</a>
+                            </li>
+                            <li>
+                                <a href="#tickectCancel" >tickectCancel</a>
+                            </li>
+                            <li>
+                                <a href="#ticketBooking" >ticketBooking</a>
+                            </li>
+                            <li>
+                                <a href="#ticketBookingList" >ticketBookingList</a>
+                            </li>
+                            <li>
+                                <a href="#ticketCancelled" >ticketCancelled</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+            <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="findBookingTicketById"></a>
+                    <span class="name">
+                        <span ><b>findBookingTicketById</b></span>
+                        <a href="#findBookingTicketById"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>findBookingTicketById(id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <b>Decorators : </b>
+                    <br />
+                    <code>@ApiParam({name: &#x27;id&#x27;, description: &#x27;name id&#x27;, required: true})<br />@ApiOkResponse({description: &#x27;Ticketbooking found by id successfully&#x27;, status: undefined})<br />@ApiInternalServerErrorResponse({description: &#x27;Ticket not found for this id&#x27;, status: undefined})<br />@ApiNotFoundResponse({description: &#x27;Ticket not booked for this id&#x27;, status: undefined})<br />@Get(&#x27;/findBookingTicketById/:id&#x27;)<br /></code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="60"
+                            class="link-to-prism">src/ticketbooking/ticketbooking.controller.ts:60</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>findBookingTicketById</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>id</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>passing path</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>if success or failure</p>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="findTicketBookedByName"></a>
+                    <span class="name">
+                        <span ><b>findTicketBookedByName</b></span>
+                        <a href="#findTicketBookedByName"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>findTicketBookedByName(name: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <b>Decorators : </b>
+                    <br />
+                    <code>@ApiParam({name: &#x27;name&#x27;, description: &#x27;Ticket name&#x27;, required: true})<br />@ApiOkResponse({description: &#x27;Ticket found by name successfully&#x27;, status: undefined})<br />@ApiInternalServerErrorResponse({description: &#x27;Ticket not found for name&#x27;, status: undefined})<br />@ApiNotFoundResponse({description: &#x27;Ticket not booked for name&#x27;, status: undefined})<br />@Get(&#x27;/findTicketBookedByName/:name&#x27;)<br /></code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="77"
+                            class="link-to-prism">src/ticketbooking/ticketbooking.controller.ts:77</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>findTicketBookedByName</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>name</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>passing path</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../classes/TicketDto.html" target="_self" >Promise&lt;TicketDto[]&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>if success or failure</p>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="findUserTicketById"></a>
+                    <span class="name">
+                        <span ><b>findUserTicketById</b></span>
+                        <a href="#findUserTicketById"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>findUserTicketById(id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <b>Decorators : </b>
+                    <br />
+                    <code>@ApiParam({name: &#x27;id&#x27;, description: &#x27;Ticket id&#x27;, required: true})<br />@ApiOkResponse({description: &#x27;Ticket finding by id successfully&#x27;, status: undefined})<br />@ApiInternalServerErrorResponse({description: &#x27;Ticket not found by  for this id&#x27;, status: undefined})<br />@ApiNotFoundResponse({description: &#x27;Ticket not booked for id&#x27;, status: undefined})<br />@Get(&#x27;/findUserTicketById/:id&#x27;)<br /></code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="131"
+                            class="link-to-prism">src/ticketbooking/ticketbooking.controller.ts:131</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>tickect find by query builder</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>id</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>passing path</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>if success or failure</p>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="tickectCancel"></a>
+                    <span class="name">
+                        <span ><b>tickectCancel</b></span>
+                        <a href="#tickectCancel"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>tickectCancel(id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <b>Decorators : </b>
+                    <br />
+                    <code>@ApiParam({name: &#x27;id&#x27;, description: &#x27;Ticket id&#x27;, required: true})<br />@ApiOkResponse({description: &#x27;Ticket cancel successfully&#x27;, status: undefined})<br />@ApiInternalServerErrorResponse({description: &#x27;Ticket not cancel for this id&#x27;, status: undefined})<br />@ApiNotFoundResponse({description: &#x27;Ticket not booked for id&#x27;, status: undefined})<br />@Delete(&#x27;/tickectCancel/:id&#x27;)<br /></code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="114"
+                            class="link-to-prism">src/ticketbooking/ticketbooking.controller.ts:114</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>tickectCancel</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>id</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>passing path</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>if success or failure</p>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ticketBooking"></a>
+                    <span class="name">
+                        <span ><b>ticketBooking</b></span>
+                        <a href="#ticketBooking"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ticketBooking(ticket: <a href="../classes/TicketDto.html" target="_self">TicketDto</a>)</code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <b>Decorators : </b>
+                    <br />
+                    <code>@ApiBody({description: &#x27;TicketDto&#x27;, required: true, type: TicketDto})<br />@ApiCreatedResponse({description: &#x27;Ticket booked successfully&#x27;, status: undefined})<br />@ApiInternalServerErrorResponse({description: &#x27;Ticket not booked successfully&#x27;, status: undefined})<br />@Post(&#x27;/ticketBooking&#x27;)<br /></code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="31"
+                            class="link-to-prism">src/ticketbooking/ticketbooking.controller.ts:31</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>ticketbooking</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>ticket</td>
+                                    <td>
+                                                <code><a href="../classes/TicketDto.html" target="_self" >TicketDto</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>passing path</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;string&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>if success or failure</p>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ticketBookingList"></a>
+                    <span class="name">
+                        <span ><b>ticketBookingList</b></span>
+                        <a href="#ticketBookingList"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ticketBookingList(ticket: <a href="../classes/TicketDto.html" target="_self">TicketDto</a>)</code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <b>Decorators : </b>
+                    <br />
+                    <code>@ApiOkResponse({description: &#x27;Ticket booking list&#x27;, status: undefined})<br />@ApiInternalServerErrorResponse({description: &#x27;Ticket booking list not found&#x27;, status: undefined})<br />@Get(&#x27;/ticketBookingList&#x27;)<br /></code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="43"
+                            class="link-to-prism">src/ticketbooking/ticketbooking.controller.ts:43</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>ticketBookingList</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>ticket</td>
+                                    <td>
+                                                <code><a href="../classes/TicketDto.html" target="_self" >TicketDto</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>passing path</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../classes/TicketDto.html" target="_self" >Promise&lt;TicketDto[]&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>if success or failure</p>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ticketCancelled"></a>
+                    <span class="name">
+                        <span ><b>ticketCancelled</b></span>
+                        <a href="#ticketCancelled"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ticketCancelled(id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <b>Decorators : </b>
+                    <br />
+                    <code>@ApiParam({name: &#x27;id&#x27;, description: &#x27;Ticket id&#x27;, required: true})<br />@Roles(Role.Admin)<br />@UseGuards(RolesGuard)<br />@ApiOkResponse({description: &#x27;Ticket finding by id successfully&#x27;, status: undefined})<br />@ApiInternalServerErrorResponse({description: &#x27;Ticket not found by  for this id&#x27;, status: undefined})<br />@ApiNotFoundResponse({description: &#x27;Ticket not booked for id&#x27;, status: undefined})<br />@Patch(&#x27;/ticketCancelled/:id&#x27;)<br /></code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="151"
+                            class="link-to-prism">src/ticketbooking/ticketbooking.controller.ts:151</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>tickect find by query builder</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>id</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>passing path</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;string&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>if success or failure</p>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>    </div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Body, Controller, Delete, Get, HttpStatus, Param, ParseIntPipe, Patch, Post, Put, UseGuards } from &quot;@nestjs/common&quot;;
+import { ApiBody, ApiCreatedResponse, ApiInternalServerErrorResponse, ApiNotFoundResponse, ApiOkResponse, ApiParam, ApiTags } from &quot;@nestjs/swagger&quot;;
+import { JwtAuthGuard } from &quot;src/user/guards/jwt-auth.guard&quot;;
+import { RolesGuard } from &quot;src/user/guards/roles.guard&quot;;
+import { Roles } from &quot;src/user/role/roles.decorator&quot;;
+import { Role } from &quot;src/user/roles/role&quot;;
+import { TicketDto } from &quot;./dto/ticketbooking.dto&quot;;
+import { TicketService } from &quot;./ticketbooking.service&quot;;
+/**
+ * TicketController
+ * @author Md Nasir Hussain
+ */
+ //@UseGuards(JwtAuthGuard)
+@ApiTags(&#x27;Ticket&#x27;)
+@Controller(&#x27;ticket&#x27;)
+export class TicketController {
+    /**
+     * ticketService, we will write business logic here 
+     * @param ticketService  path
+     */
+    constructor(private ticketService: TicketService) { }
+    /**
+      * ticketbooking
+      * @param ticket passing path
+      * @returns if success or failure
+      */
+    @ApiBody({ description: &#x27;TicketDto&#x27;, required: true, type: TicketDto })
+    @ApiCreatedResponse({ description: &#x27;Ticket booked successfully&#x27;, status: HttpStatus.CREATED })
+    @ApiInternalServerErrorResponse({ description: &#x27;Ticket not booked successfully&#x27;, status: HttpStatus.INTERNAL_SERVER_ERROR })
+    @Post(&#x27;/ticketBooking&#x27;)
+    ticketBooking(@Body() ticket: TicketDto): Promise&lt;string&gt; {
+        return this.ticketService.ticketBooking(ticket)
+    }
+    /**
+     * ticketBookingList
+     * @param ticket passing path
+     * @returns if success or failure
+     */
+    
+    @ApiOkResponse({ description: &#x27;Ticket booking list&#x27;, status: HttpStatus.OK })
+    @ApiInternalServerErrorResponse({ description: &quot;Ticket booking list not found&quot;, status: HttpStatus.INTERNAL_SERVER_ERROR })
+    @Get(&#x27;/ticketBookingList&#x27;)
+    ticketBookingList(ticket: TicketDto): Promise&lt;TicketDto[]&gt; {
+        return this.ticketService.ticketBookingList(ticket)
+    }
+    /**
+     * findBookingTicketById
+     * @param id passing path
+     * @returns if success or failure
+     */
+    @ApiParam({
+        name: &#x27;id&#x27;,
+        description: &#x27;name id&#x27;,
+        required: true
+    })
+    @ApiOkResponse({ description: &#x27;Ticketbooking found by id successfully&#x27;, status: HttpStatus.OK })
+    @ApiInternalServerErrorResponse({ description: &#x27;Ticket not found for this id&#x27;, status: HttpStatus.INTERNAL_SERVER_ERROR })
+    @ApiNotFoundResponse({ description: &#x27;Ticket not booked for this id&#x27;, status: HttpStatus.NOT_FOUND })
+    @Get(&#x27;/findBookingTicketById/:id&#x27;)
+    findBookingTicketById(@Param(&#x27;id&#x27;, ParseIntPipe) id: number) {
+        return this.ticketService.findBookingTicketById(id);
+    }
+    /**
+     * findTicketBookedByName
+     * @param name passing path
+     * @returns if success or failure
+     */
+    @ApiParam({
+        name: &#x27;name&#x27;,
+        description: &#x27;Ticket name&#x27;,
+        required: true
+    })
+    @ApiOkResponse({ description: &#x27;Ticket found by name successfully&#x27;, status: HttpStatus.OK })
+    @ApiInternalServerErrorResponse({ description: &#x27;Ticket not found for name&#x27;, status: HttpStatus.INTERNAL_SERVER_ERROR })
+    @ApiNotFoundResponse({ description: &#x27;Ticket not booked for name&#x27;, status: HttpStatus.NOT_FOUND })
+    @Get(&#x27;/findTicketBookedByName/:name&#x27;)
+    findTicketBookedByName(@Param(&#x27;name&#x27;) name: string): Promise&lt;TicketDto[]&gt; {
+        return this.ticketService.findTicketBookedByName(name);
+    }
+    /**
+     * updateTicketBookingDetails
+     * @param id passing path
+     * @param ticlet  passing path
+     * @returns if success or failure
+     */
+    /*
+    @ApiParam({
+        name: &#x27;id&#x27;,
+        description: &#x27;Ticket id&#x27;,
+        required: true
+    })
+    @ApiOkResponse({ description: &#x27;Ticket updated successfully by id&#x27;, status: HttpStatus.OK })
+    @ApiInternalServerErrorResponse({ description: &#x27;Ticket not updated for this id&#x27;, status: HttpStatus.INTERNAL_SERVER_ERROR })
+    @ApiNotFoundResponse({ description: &#x27;Ticket not update for this id&#x27;, status: HttpStatus.NOT_FOUND })
+    @Put(&#x27;/updateTicketBookingDetails/:id&#x27;)
+    updateTicketBookingDetails(@Param(&#x27;id&#x27;, ParseIntPipe) id: number, @Body() ticlet: TicketDto): Promise&lt;string&gt; {
+        return this.ticketService.updateTicketBookingDetails(id, ticlet);
+    }
+    */
+    /**
+     * tickectCancel
+     * @param id passing path 
+     * @returns if success or failure
+     */
+    @ApiParam({
+        name: &#x27;id&#x27;,
+        description: &#x27;Ticket id&#x27;,
+        required: true
+    })
+    @ApiOkResponse({ description: &#x27;Ticket cancel successfully&#x27;, status: HttpStatus.OK })
+    @ApiInternalServerErrorResponse({ description: &#x27;Ticket not cancel for this id&#x27;, status: HttpStatus.INTERNAL_SERVER_ERROR })
+    @ApiNotFoundResponse({ description: &#x27;Ticket not booked for id&#x27;, status: HttpStatus.NOT_FOUND })
+    @Delete(&#x27;/tickectCancel/:id&#x27;)
+    tickectCancel(@Param(&#x27;id&#x27;, ParseIntPipe) id: number) {
+        return this.ticketService.tickectCancel(id);
+    }
+    /**
+         * tickect find by query builder
+         * @param id passing path 
+         * @returns if success or failure
+         */
+    @ApiParam({
+        name: &#x27;id&#x27;,
+        description: &#x27;Ticket id&#x27;,
+        required: true
+    })
+    @ApiOkResponse({ description: &#x27;Ticket finding by id successfully&#x27;, status: HttpStatus.OK })
+    @ApiInternalServerErrorResponse({ description: &#x27;Ticket not found by  for this id&#x27;, status: HttpStatus.INTERNAL_SERVER_ERROR })
+    @ApiNotFoundResponse({ description: &#x27;Ticket not booked for id&#x27;, status: HttpStatus.NOT_FOUND })
+    @Get(&#x27;/findUserTicketById/:id&#x27;)
+    findUserTicketById(@Param(&#x27;id&#x27;, ParseIntPipe) id: number) {
+        return this.ticketService.findUserTicketById(id)
+    }
+
+    /**
+     * tickect find by query builder
+     * @param id passing path 
+     * @returns if success or failure
+    */
+    @ApiParam({
+        name: &#x27;id&#x27;,
+        description: &#x27;Ticket id&#x27;,
+        required: true
+    })
+    @Roles(Role.Admin)
+    @UseGuards(RolesGuard)
+    @ApiOkResponse({ description: &#x27;Ticket finding by id successfully&#x27;, status: HttpStatus.OK })
+    @ApiInternalServerErrorResponse({ description: &#x27;Ticket not found by  for this id&#x27;, status: HttpStatus.INTERNAL_SERVER_ERROR })
+    @ApiNotFoundResponse({ description: &#x27;Ticket not booked for id&#x27;, status: HttpStatus.NOT_FOUND })
+    @Patch(&#x27;/ticketCancelled/:id&#x27;)
+    ticketCancelled(@Param(&#x27;id&#x27;)id: number): Promise&lt;string&gt; {
+        return this.ticketService.ticketCancelled(id)
+    }
+}
+
+</code></pre>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'controller';
+            var COMPODOC_CURRENT_PAGE_URL = 'TicketController.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

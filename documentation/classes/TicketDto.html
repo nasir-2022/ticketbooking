@@ -1,0 +1,828 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>ticketbooking documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">ticketbooking documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content class">
+                   <div class="content-data">
+
+
+
+
+
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li>Classes</li>
+  <li >TicketDto</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info">
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>src/ticketbooking/dto/ticketbooking.dto.ts</code>
+        </p>
+
+
+            <p class="comment">
+                <h3>Description</h3>
+            </p>
+            <p class="comment">
+                <p>ticket booking class</p>
+
+            </p>
+
+
+
+
+            <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#age" >age</a>
+                            </li>
+                            <li>
+                                <a href="#fare" >fare</a>
+                            </li>
+                            <li>
+                                <a href="#from" >from</a>
+                            </li>
+                            <li>
+                                <a href="#gender" >gender</a>
+                            </li>
+                            <li>
+                                <a href="#id" >id</a>
+                            </li>
+                            <li>
+                                <a href="#meal_preference" >meal_preference</a>
+                            </li>
+                            <li>
+                                <a href="#name" >name</a>
+                            </li>
+                            <li>
+                                <a href="#sataus" >sataus</a>
+                            </li>
+                            <li>
+                                <a href="#seat_number" >seat_number</a>
+                            </li>
+                            <li>
+                                <a href="#to" >to</a>
+                            </li>
+                            <li>
+                                <a href="#trevalsBookingDate" >trevalsBookingDate</a>
+                            </li>
+                            <li>
+                                <a href="#trevalsDate" >trevalsDate</a>
+                            </li>
+                            <li>
+                                <a href="#user" >user</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+
+            <section>
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="age"></a>
+                    <span class="name">
+                        <span ><b>age</b></span>
+                        <a href="#age"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <b>Decorators : </b>
+                        <br />
+                        <code>
+                            @ApiProperty()<br />@IsNotEmpty({message: &#x27;Age can not be empty&#x27;})<br />@IsNumber()<br />@MinLength(1, {message: &#x27;Age minimum one digit&#x27;})<br />@MaxLength(3, {message: &#x27;Age should be maximum 3 digit&#x27;})<br />
+                        </code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="32" class="link-to-prism">src/ticketbooking/dto/ticketbooking.dto.ts:32</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>ticket booking age colume name</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="fare"></a>
+                    <span class="name">
+                        <span ><b>fare</b></span>
+                        <a href="#fare"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <b>Decorators : </b>
+                        <br />
+                        <code>
+                            @ApiProperty()<br />@IsNotEmpty({message: &#x27;Trevals fare can not be empty&#x27;})<br />@IsNumber()<br />
+                        </code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="80" class="link-to-prism">src/ticketbooking/dto/ticketbooking.dto.ts:80</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>trevals fare</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="from"></a>
+                    <span class="name">
+                        <span ><b>from</b></span>
+                        <a href="#from"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <b>Decorators : </b>
+                        <br />
+                        <code>
+                            @ApiProperty()<br />@IsNotEmpty({message: &#x27;Trevals place can not be empty&#x27;})<br />@IsString({message: &#x27;Trevals place name  should be letter&#x27;})<br />@MinLength(2, {message: &#x27;Trevals minimum five leter&#x27;})<br />@MaxLength(100, {message: &#x27;Trevals should be maximum 100 leters&#x27;})<br />
+                        </code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="50" class="link-to-prism">src/ticketbooking/dto/ticketbooking.dto.ts:50</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>trevals starting place</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="gender"></a>
+                    <span class="name">
+                        <span ><b>gender</b></span>
+                        <a href="#gender"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <b>Decorators : </b>
+                        <br />
+                        <code>
+                            @ApiProperty()<br />@IsNotEmpty({message: &#x27;Gender can not be empty&#x27;})<br />@IsString({message: &#x27;Gender should be string&#x27;})<br />@MinLength(5, {message: &#x27;Gender minimum five leter&#x27;})<br />@MaxLength(6, {message: &#x27;Gender should be maximum 6 leters&#x27;})<br />
+                        </code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="41" class="link-to-prism">src/ticketbooking/dto/ticketbooking.dto.ts:41</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Ticket booking gender name colume</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="id"></a>
+                    <span class="name">
+                        <span ><b>id</b></span>
+                        <a href="#id"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="14" class="link-to-prism">src/ticketbooking/dto/ticketbooking.dto.ts:14</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>ticket booking id colume name</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="meal_preference"></a>
+                    <span class="name">
+                        <span ><b>meal_preference</b></span>
+                        <a href="#meal_preference"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../miscellaneous/enumerations.html#Meal" target="_self" >Meal</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="84" class="link-to-prism">src/ticketbooking/dto/ticketbooking.dto.ts:84</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>meal_preference enume type colume name</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="name"></a>
+                    <span class="name">
+                        <span ><b>name</b></span>
+                        <a href="#name"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <b>Decorators : </b>
+                        <br />
+                        <code>
+                            @ApiProperty()<br />@IsNotEmpty({message: &#x27;Name can not be empty&#x27;})<br />@IsString({message: &#x27;Name should be string&#x27;})<br />@MinLength(3, {message: &#x27;Name minimum three leter&#x27;})<br />@MaxLength(100, {message: &#x27;Name should be maximum 100 leters&#x27;})<br />
+                        </code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="23" class="link-to-prism">src/ticketbooking/dto/ticketbooking.dto.ts:23</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Ticket booking passanger name colume</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="sataus"></a>
+                    <span class="name">
+                        <span ><b>sataus</b></span>
+                        <a href="#sataus"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../miscellaneous/enumerations.html#Status" target="_self" >Status</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="95" class="link-to-prism">src/ticketbooking/dto/ticketbooking.dto.ts:95</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Ticket booking colume name book/cancel</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="seat_number"></a>
+                    <span class="name">
+                        <span ><b>seat_number</b></span>
+                        <a href="#seat_number"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <b>Decorators : </b>
+                        <br />
+                        <code>
+                            @ApiProperty()<br />@IsNotEmpty({message: &#x27;Seat Number can not be empty&#x27;})<br />@IsNumber()<br />
+                        </code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="91" class="link-to-prism">src/ticketbooking/dto/ticketbooking.dto.ts:91</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>ticket booking seat number colume name</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="to"></a>
+                    <span class="name">
+                        <span ><b>to</b></span>
+                        <a href="#to"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <b>Decorators : </b>
+                        <br />
+                        <code>
+                            @ApiProperty()<br />@IsNotEmpty({message: &#x27;Trevals end place name can not be empty&#x27;})<br />@IsString({message: &#x27;Trevals end place name should be letter&#x27;})<br />@MinLength(2, {message: &#x27;Trevals place name minimum five leter&#x27;})<br />@MaxLength(100, {message: &#x27;Trevals place name should be maximum 100 leters&#x27;})<br />
+                        </code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="59" class="link-to-prism">src/ticketbooking/dto/ticketbooking.dto.ts:59</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>trelvals ending  place</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="trevalsBookingDate"></a>
+                    <span class="name">
+                        <span ><b>trevalsBookingDate</b></span>
+                        <a href="#trevalsBookingDate"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <b>Decorators : </b>
+                        <br />
+                        <code>
+                            @ApiProperty()<br />@IsNotEmpty({message: &#x27;Trevals booking  date can not be empty&#x27;})<br />@IsDate({message: &#x27;Trevals booking date should be date&#x27;})<br />
+                        </code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="73" class="link-to-prism">src/ticketbooking/dto/ticketbooking.dto.ts:73</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>trevalsBookingDate</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="trevalsDate"></a>
+                    <span class="name">
+                        <span ><b>trevalsDate</b></span>
+                        <a href="#trevalsDate"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <b>Decorators : </b>
+                        <br />
+                        <code>
+                            @ApiProperty()<br />@IsNotEmpty({message: &#x27;Trevals date can not be empty&#x27;})<br />@IsDate({message: &#x27;Trevals date should be date&#x27;})<br />
+                        </code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="66" class="link-to-prism">src/ticketbooking/dto/ticketbooking.dto.ts:66</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>trevals date</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="user"></a>
+                    <span class="name">
+                        <span ><b>user</b></span>
+                        <a href="#user"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../entitys/User.html" target="_self" >User</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="100" class="link-to-prism">src/ticketbooking/dto/ticketbooking.dto.ts:100</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>relation creation</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+</section>
+
+
+
+
+
+
+
+    </div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { ApiProperty } from &quot;@nestjs/swagger&quot;;
+import { IsDate, IsNotEmpty, IsNumber, IsString, MaxLength, MinLength } from &quot;class-validator&quot;;
+import { User } from &quot;src/user/user.entity&quot;;
+import { Meal } from &quot;../meals/meals&quot;;
+import { Status } from &quot;../status/status&quot;;
+/**
+ * ticket booking class
+ * @author Md Nasir Hussain
+ */
+export class TicketDto {
+      /**
+      * ticket booking id colume name
+      */
+      id: number;
+      /**
+       * Ticket booking passanger name colume
+       */
+      @ApiProperty()
+      @IsNotEmpty({ message: &quot;Name can not be empty&quot; })
+      @IsString({ message: &quot;Name should be string&quot; })
+      @MinLength(3, { message: &quot;Name minimum three leter&quot; })
+      @MaxLength(100, { message: &quot;Name should be maximum 100 leters&quot; })
+      name: string;
+      /**
+       * ticket booking age colume name
+       */
+      @ApiProperty()
+      @IsNotEmpty({ message: &quot;Age can not be empty&quot; })
+      @IsNumber()
+      @MinLength(1, { message: &quot;Age minimum one digit&quot; })
+      @MaxLength(3, { message: &quot;Age should be maximum 3 digit&quot; })
+      age: number;
+      /**
+       * Ticket booking gender name colume
+       */
+      @ApiProperty()
+      @IsNotEmpty({ message: &quot;Gender can not be empty&quot; })
+      @IsString({ message: &quot;Gender should be string&quot; })
+      @MinLength(5, { message: &quot;Gender minimum five leter&quot; })
+      @MaxLength(6, { message: &quot;Gender should be maximum 6 leters&quot; })
+      gender: string;
+      /**
+       * trevals starting place
+       */
+      @ApiProperty()
+      @IsNotEmpty({ message: &quot;Trevals place can not be empty&quot; })
+      @IsString({ message: &quot;Trevals place name  should be letter&quot; })
+      @MinLength(2, { message: &quot;Trevals minimum five leter&quot; })
+      @MaxLength(100, { message: &quot;Trevals should be maximum 100 leters&quot; })
+      from: string;
+      /**
+       * trelvals ending  place 
+       */
+      @ApiProperty()
+      @IsNotEmpty({ message: &quot;Trevals end place name can not be empty&quot; })
+      @IsString({ message: &quot;Trevals end place name should be letter&quot; })
+      @MinLength(2, { message: &quot;Trevals place name minimum five leter&quot; })
+      @MaxLength(100, { message: &quot;Trevals place name should be maximum 100 leters&quot; })
+      to: string;
+      /**
+       * trevals date
+       */
+      @ApiProperty()
+      @IsNotEmpty({ message: &quot;Trevals date can not be empty&quot; })
+      @IsDate({ message: &quot;Trevals date should be date&quot; })
+      trevalsDate: string
+      /**
+       * trevalsBookingDate
+       */
+      @ApiProperty()
+      @IsNotEmpty({ message: &quot;Trevals booking  date can not be empty&quot; })
+      @IsDate({ message: &quot;Trevals booking date should be date&quot; })
+      trevalsBookingDate: string
+      /**
+       * trevals fare
+       */
+      @ApiProperty()
+      @IsNotEmpty({ message: &quot;Trevals fare can not be empty&quot; })
+      @IsNumber()
+      fare: number
+      /**
+       * meal_preference enume type colume name 
+       */
+      meal_preference: Meal;
+      /**
+       * ticket booking seat number colume name
+       */
+      @ApiProperty()
+      @IsNotEmpty({ message: &quot;Seat Number can not be empty&quot; })
+      @IsNumber()
+      seat_number: number;
+      /**
+       * Ticket booking colume name book/cancel
+       */
+      sataus: Status;
+      /**
+       * relation creation
+       */
+
+      user: User;
+}</code></pre>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'class';
+            var COMPODOC_CURRENT_PAGE_URL = 'TicketDto.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>
